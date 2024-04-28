@@ -1,0 +1,24 @@
+#ban1 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.ibb.co/Kb8pJWb/sban3.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+#ban2 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.ibb.co/YWSBGF0/smartin2.jpg');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+#ban3 {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://i.ibb.co/wgHYd3V/cland1.webp');
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}

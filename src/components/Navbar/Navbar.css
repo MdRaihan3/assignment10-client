@@ -1,0 +1,22 @@
+
+
+  .hov-img{
+    position: relative;
+    display: inline-block;
+  }
+  .hov-content{
+    display: none;
+    position: absolute;
+    z-index: 11;
+    padding: 0.2rem;
+    min-width: 6rem;
+    background-color: darkgray;
+  }
+  .hov-img:hover .hov-content{
+    display: block;
+  }
+
+  .menu li > *:not(ul, .menu-title, details, .btn):active, .menu li > *:not(ul, .menu-title, details, .btn).active, .menu li > details > summary:active {
+    background-color:aqua;
+     color: black;
+  }
