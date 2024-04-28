@@ -1,8 +1,19 @@
-# React + Vite
+# Assignment 10
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# [Live Site Link](https://rhome-4bd0b.web.app)
+--------
 
-Currently, two official plugins are available:
+***features and characteristics of this website***
+- smooth user performances
+- responsive for all device
+- fast performance
+- user can explore and see there desired tourist spot
+- private routes give extra security
+--------
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Category(Southeast Asia)**
+-----
+
+**2 package name**
+- Lottie React
+- React Simple Typewriter
