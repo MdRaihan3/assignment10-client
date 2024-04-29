@@ -47,7 +47,7 @@ const AddTouristSpot = () => {
     return (
         <div className=" md:mx-20 border p-5 bg-[#CBF6FF]">
             <form onSubmit={handleAddTouristSpot}>
-                <h1 className=" text-center text-xl font-bold">Add Tourist Spot</h1>
+                <h1 className=" text-center text-xl font-bold">Add Tourist Spot.........</h1>
                 <hr />
                 {/* image and spot name */}
                 <div className=" md:flex gap-4 mb-3 ">
