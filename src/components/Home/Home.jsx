@@ -43,8 +43,8 @@ const Home = () => {
                             <p>Your adventure starts now. Your local expert will act as your right hand throughout your journey. We work exclusively with expert and certified local partners.
                             </p>
                             <ul className=" list-disc ml-5">
-                                <li>Choose your desired destination.</li>
-                                <li>It is simple and fast and will help your local expert pinpoint exactly what you are looking for.</li>
+                                <li>Choose your desired destination.......</li>
+                                <li>It is simple and fast and will help your local expert pinpoint exactly what you are looking for....................</li>
                             </ul>
                         </div>
                         <div className=" col-span-1  p-4 border space-y-2">
