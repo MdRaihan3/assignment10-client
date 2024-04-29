@@ -62,6 +62,7 @@ const MyList = () => {
                             <th>Tourist Spot Name</th>
                             <th>Country</th>
                             <th>Seasonality</th>
+                            <th>Average Cost</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -72,6 +73,7 @@ const MyList = () => {
                                 <td>{u?.tourists_spot_name}</td>
                                 <td>{u?.country_Name}</td>
                                 <td>{u?.seasonality}</td>
+                                <td>{u?.average_cost}$</td>
 
                                 <td><Link to={`/updateSpot/${u?._id}`}><button className=" btn">Update</button></Link></td>
 
