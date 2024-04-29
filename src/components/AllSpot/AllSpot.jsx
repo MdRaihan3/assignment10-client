@@ -16,7 +16,7 @@ const AllSpot = () => {
             <details className="dropdown mt-8 mb-4">
                 <summary className="m-1 btn px-4 pt-1 pb-2 bg-[#23BE0A] text-white font-semibold">Sort By <RiArrowDropDownLine className="text-4xl"></RiArrowDropDownLine></summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box border-2 w-52">
-                    <li className=" bg-green-300 rounded" onClick={handleSort}><a>Average Cost</a></li>
+                    <li className=" bg-green-300 rounded" onClick={handleSort}><a>Average      Costttt</a></li>
                </ul>
             </details>
             
