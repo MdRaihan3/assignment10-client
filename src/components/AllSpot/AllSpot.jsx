@@ -31,9 +31,9 @@ const AllSpot = () => {
                                 <h1 className=" text-xl font-bold">
                                     {spot?.tourists_spot_name}</h1>
                                 <hr />
-                                <p><span className=" font-bold">Average Cost : ......</span>
+                                <p><span className=" font-bold">Average Cost : </span>
                                     {spot?.average_cost}$</p>
-                                <p><span className=" font-bold">Total Visitor Per Year : ......</span>
+                                <p><span className=" font-bold">Total Visitor Per Year : </span>
                                     {spot?.totalVisitorsPerYear}</p>
                                 <p><span className=" font-bold">Seasonality : </span>
                                     {spot?.seasonality}</p>
