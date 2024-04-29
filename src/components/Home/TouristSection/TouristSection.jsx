@@ -28,6 +28,7 @@ const TouristSection = () => {
                                     {spot?.seasonality}</p>
                                 <p><span className=" font-bold">Travel Time : </span>
                                     {spot?.travel_time}</p>
+                                    
                                 <Link to={`/viewDetails/${spot._id}`}>
                                     <button className=" btn btn-secondary">View Details</button>
                                 </Link>

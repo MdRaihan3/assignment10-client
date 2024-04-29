@@ -44,7 +44,7 @@ const Home = () => {
                             </p>
                             <ul className=" list-disc ml-5">
                                 <li>Choose your desired destination.</li>
-                                <li>It's simple and fast and will help your local expert pinpoint exactly what you're looking for.</li>
+                                <li>It is simple and fast and will help your local expert pinpoint exactly what you are looking for.</li>
                             </ul>
                         </div>
                         <div className=" col-span-1  p-4 border space-y-2">
