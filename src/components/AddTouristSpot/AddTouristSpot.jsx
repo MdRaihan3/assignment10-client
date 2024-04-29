@@ -24,7 +24,7 @@ const AddTouristSpot = () => {
         const newSpot = {image, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear, email, userName}
         console.log(newSpot)
         // send to the server
-        fetch('http://localhost:5000/addSpot', {
+        fetch('https://tourist-server-eosin.vercel.app/addSpot', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

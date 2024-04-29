@@ -37,14 +37,13 @@ const router = createBrowserRouter([
             {
                 path: '/allTouristSpot',
                 element: <AllSpot></AllSpot>,
-                loader: () => fetch('http://localhost:5000/allSpot'),
+                loader: () => fetch('https://tourist-server-eosin.vercel.app/allSpot'),
                 errorElement: <ErrorPage></ErrorPage>,
             },
             {
                 path: '/myList',
                 element: <PrivateRoute><MyList></MyList></PrivateRoute>,
                 errorElement: <ErrorPage></ErrorPage>,
-
             },
             {
                 path: '/addSpot',
@@ -55,19 +54,19 @@ const router = createBrowserRouter([
             {
                 path: '/updateSpot/:id',
                 element: <PrivateRoute><UpdateSpot></UpdateSpot></PrivateRoute>,
-                loader: ({ params }) => fetch(`http://localhost:5000/userSpot/${params.id}`),
+                loader: ({ params }) => fetch(`https://tourist-server-eosin.vercel.app/userSpot/${params.id}`),
                 errorElement: <ErrorPage></ErrorPage>,
             },
             {
                 path: '/viewDetails/:id',
                 element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>,
-                loader: ({params}) => fetch(`http://localhost:5000/userSpot/${params.id}`),
+                loader: ({params}) => fetch(`https://tourist-server-eosin.vercel.app/userSpot/${params.id}`),
                 errorElement: <ErrorPage></ErrorPage>,
             },
             {
                 path: '/countrySpot/:country',
                 element: <CountrySpot></CountrySpot>,
-                loader: ({params}) => fetch(`http://localhost:5000/spotList/${params.country}`),
+                loader: ({params}) => fetch(`https://tourist-server-eosin.vercel.app/spotList/${params.country}`),
                 errorElement: <ErrorPage></ErrorPage>,
             }
         ]

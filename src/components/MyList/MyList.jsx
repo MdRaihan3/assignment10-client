@@ -9,7 +9,7 @@ const MyList = () => {
     const location = useLocation()
     console.log(location)
     useEffect(() => {
-        fetch(`http://localhost:5000/userSpotList/${user?.email}`)
+        fetch(`https://tourist-server-eosin.vercel.app/userSpotList/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setLoadedUsers(data)
@@ -32,7 +32,7 @@ const MyList = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/delete/${id}`, {
+                fetch(`https://tourist-server-eosin.vercel.app/delete/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -59,7 +59,7 @@ const MyList = () => {
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>Tourist Spot Name......</th>
+                            <th>Tourist Spot Name</th>
                             <th>Country</th>
                             <th>Seasonality</th>
                             <th>Average Cost</th>

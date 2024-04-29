@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const TouristSection = () => {
     const [spots, setSpots] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/allSpot')
+        fetch('https://tourist-server-eosin.vercel.app/allSpot')
             .then(res => res.json())
             .then(data => setSpots(data))
     }, [])

@@ -19,7 +19,7 @@ const UpdateSpot = () => {
 
         const updatedSpot = {image, tourists_spot_name, country_Name, location, description, average_cost, seasonality, travel_time, totalVisitorsPerYear}
 
-        fetch(`http://localhost:5000/update/${user._id}`,{
+        fetch(`https://tourist-server-eosin.vercel.app/update/${user._id}`,{
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
