@@ -1,16 +1,30 @@
 import { useContext } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProviders";
 import './Navbar.css'
 
 const Navbar = () => {
-    const { user, logOut } = useContext(AuthContext)
+    const { user, logOut, checked, setChecked } = useContext(AuthContext)
+    const location = useLocation()
+
+    const handleCheck = () => {
+        setChecked(!checked)
+    }
 
     const handleSignOut = () => {
         logOut()
             .then()
             .catch()
     }
+
+    const themeToggle = <>
+        <div className="form-control w-52">
+            <label className="cursor-pointer label">
+                <input type="checkbox" className="toggle toggle-primary"
+                    checked={checked} onChange={handleCheck} />
+            </label>
+        </div>
+    </>
 
     const links = <>
         <li><NavLink to='/'>Home</NavLink></li>
@@ -45,11 +59,16 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end">
                     {
+                        location.pathname === '/' && themeToggle
+                    }
+
+
+                    {
                         user &&
                         <div className=" hov-img">
                             <div className=" hov-content border-2 -ml-16">
                                 <h1 className=" font-bold">{user && user?.displayName}</h1>
-                               
+
                                 <br />
                                 {
                                     user && <button onClick={handleSignOut} className="btn">LogOut</button>

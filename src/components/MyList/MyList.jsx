@@ -1,11 +1,13 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProviders";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
 
 const MyList = () => {
     const { user } = useContext(AuthContext)
     const [loadedUsers, setLoadedUsers] = useState([])
+    const location = useLocation()
+    console.log(location)
     useEffect(() => {
         fetch(`http://localhost:5000/userSpotList/${user?.email}`)
             .then(res => res.json())

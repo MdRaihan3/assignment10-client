@@ -6,18 +6,21 @@ export const AuthContext = createContext(null)
 const AuthProviders = ({ children }) => {
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true)
+    const [checked, setChecked] = useState(false)
+
+    console.log(checked)
 
     const createUser = (email, password) => {
         setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    const updateUserProfile = (name, image) =>{
+    const updateUserProfile = (name, image) => {
         setLoading(true)
-       return updateProfile(auth.currentUser, {
+        return updateProfile(auth.currentUser, {
             displayName: name,
             photoURL: image
-          })
+        })
     }
 
     const signIn = (email, password) => {
@@ -29,7 +32,7 @@ const AuthProviders = ({ children }) => {
         setLoading(true)
         return signInWithPopup(auth, googleProvider)
     }
-    const githubSignIn = (githubProvider) =>{
+    const githubSignIn = (githubProvider) => {
         setLoading(true)
         return signInWithPopup(auth, githubProvider)
     }
@@ -50,7 +53,7 @@ const AuthProviders = ({ children }) => {
         }
     }, [])
 
-    const userInfo = { user, createUser, signIn, logOut, googleSignIn, githubSignIn, updateUserProfile, loading };
+    const userInfo = { user, createUser, signIn, logOut, googleSignIn, githubSignIn, updateUserProfile, loading, checked, setChecked };
     return (
         <AuthContext.Provider value={userInfo}>
             {children}
