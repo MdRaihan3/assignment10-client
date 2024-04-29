@@ -20,10 +20,10 @@ const AllSpot = () => {
                </ul>
             </details>
             
-            <div className=" grid grid-cols-2 gap-2">
+            <div className=" md:grid grid-cols-2 gap-2">
                 {
                     spots.map(spot => <div key={spot._id}>
-                        <div className=" col-span-1 grid grid-cols-2 p-4 border-2 rounded-xl mb-3 gap-4">
+                        <div className=" col-span-1 md:grid grid-cols-2 p-4 border-2 rounded-xl mb-3 gap-4">
                             <div className=" col-span-1">
                                 <img className=" rounded-lg" src={spot?.image} alt="" />
                             </div>

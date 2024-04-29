@@ -2,7 +2,7 @@
 import { useContext, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import swal from 'sweetalert';
+import Swal from 'sweetalert2';
 import { AuthContext } from '../../providers/AuthProviders';
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 import { IoEyeOffOutline, IoEyeOutline } from 'react-icons/io5';
@@ -24,12 +24,12 @@ const Login = () => {
 
         signIn(email, password)
             .then(result => {
-                swal('Successfully logged in');
+                Swal('Successfully logged in');
                 navigate(location?.state ? location.state : '/')
                 console.log(result.user)
             })
             .catch(error => {
-                swal('Check your email and password again')
+                Swal('Check your email and password again')
                 console.error(error)
             })
     }

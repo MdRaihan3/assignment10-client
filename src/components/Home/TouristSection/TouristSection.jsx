@@ -10,11 +10,11 @@ const TouristSection = () => {
     }, [])
     return (
         <div>
-             <h1 className=" font-bold text-xl text-center">Tourist Spot</h1>
-            <div className=" grid grid-cols-2 p-3 gap-3"> 
+             <h1 className=" font-bold text-xl text-center text-blue-500">Tourist Spot</h1>
+            <div className=" md:grid grid-cols-2 p-3 gap-3"> 
                 {
                     spots.slice(0, 6).map(spot => <div key={spot._id}>
-                        <div className=" col-span-1 grid grid-cols-2 p-4 border-2 rounded-xl mb-3 gap-4">
+                        <div className=" col-span-1 md:grid grid-cols-2 p-4 border-2 rounded-xl mb-3 gap-4">
                             <div className=" col-span-1">
                                 <img className=" rounded-lg" src={spot?.image} alt="" />
                             </div>

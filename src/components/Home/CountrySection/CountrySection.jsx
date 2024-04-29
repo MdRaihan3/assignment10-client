@@ -7,14 +7,14 @@ const CountrySection = () => {
         fetch('http://localhost:5000/countries')
             .then(res => res.json())
             .then(data => {
+                
                 setCountries(data)
-                console.log(data)
             })
     }, [])
     return (
         <div>
-            <h1 className=" text-2xl font-bold text-center">Countries</h1>
-            <div className=" grid grid-cols-3 gap-6">
+            <h1 className=" text-2xl font-bold text-center text-blue-500">Countries</h1>
+            <div className=" md:grid grid-cols-3 gap-6">
                 {
                     countries.map(c => <div key={c._id}>
                         <Link to={`/countrySpot/${c?.country_Name}`}>
