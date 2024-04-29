@@ -59,7 +59,7 @@ const MyList = () => {
                     {/* head */}
                     <thead>
                         <tr>
-                            <th>Tourist Spot Name</th>
+                            <th>Tourist Spot Name......</th>
                             <th>Country</th>
                             <th>Seasonality</th>
                             <th>Average Cost</th>

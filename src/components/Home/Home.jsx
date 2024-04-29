@@ -40,7 +40,7 @@ const Home = () => {
                         <div className=" col-span-1  p-4 border space-y-2">
                             <h3 className=" text-lg font-bold">Choose your destination</h3>
                             <hr />
-                            <p>Your adventure starts now. Your local expert will act as your right hand throughout your journey. We work exclusively with expert and certified local partners.........
+                            <p>Your adventure starts now. Your local expert will act as your right hand throughout your journey. We work exclusively with expert and certified local partners.
                             </p>
                             <ul className=" list-disc ml-5">
                                 <li>Choose your desired destination.</li>
